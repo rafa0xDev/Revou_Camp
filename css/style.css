@@ -89,7 +89,7 @@ body {
 }
 
 /* class ini buat task yang masuk ke task-view */
-.list-item {
+.task-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,7 +97,7 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.list-item:hover {
+.task-item:hover {
     background: rgba(255, 255, 255, 0.05);
 }
 
