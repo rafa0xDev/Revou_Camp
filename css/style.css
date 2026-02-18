@@ -102,7 +102,7 @@ body {
 }
 
 /* class ini buat tombol delete di tasknya */
-.delete-btn { 
+#delete-btn { 
     background: rgba(248, 113, 113, 0.15);
     color: #FCA5A5;
     border: none;
@@ -112,6 +112,24 @@ body {
     transition: background-color 0.3s ease;
 }
 
+#delete-btn:hover {
+    background: rgba(248, 113, 113, 0.25);
+}
+
+/* class ini buat tanggalan task */
+.due-date {
+    font-size: 12px;
+    color: #94A3B8;
+    margin-left: 10px;
+}
+
+/* class ini buat status */
+.task-status {
+    font-size: 12px;
+    color: rgb(254, 226, 64);
+    margin-left: 10px;
+    font-style: italic;
+}
 
 #add-task-btn {
     padding: 10px 20px;

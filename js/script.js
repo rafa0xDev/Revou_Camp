@@ -18,11 +18,19 @@ function addTask() {
     const taskItem = document.createElement('li');
     taskItem.className = 'task-item';
     taskItem.innerHTML = `
-        <span class="task-text">${taskText} - Due: ${dueDate}</span>
-        <button class="delete-btn">Delete</button>
+        <span class="task-text">${taskText}</span>
+        <span class="due-date">${dueDate ? `Due: ${dueDate}` : ''}</span>
+        <span class="task-status">pending</span>
+        <button id="delete-btn">Delete</button>
     `;
     taskList.appendChild(taskItem);
     taskInput.value = '';
     inputDate.value = '';
 }
 addTaskButton.addEventListener('click', addTask);
+
+taskList.addEventListener('click', (e) => {
+    if(e.target.id === 'delete-btn') {
+        e.target.parentElement.remove();
+    }
+});
