@@ -1,113 +1,35 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Revou Camp</title>
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>todo it</title>
 </head>
 <body>
-    <h1 style="color : blueviolet;">this is my first html code</h1>
-    <hr style="background-color: #6200ff; height: 3px; border: none; border-radius: 25px;">
-    <p class="text-3xl ">Hello mbodd!</p>
-    <p id="myname"><i><b>hello mr Rafa</b></i></p>
-<hr>
-    <!-- heading -->
-     <h1>heading</h1>
-     <h1>pe</h1>
-     <h2>pe</h1>
-     <h3>pe</h3>
-     <h4>pe</h4>
-     <h5>pe</h5>
-     <h6>pe</h6>
-<hr>
-     <!-- text formating -->
-    <p><b>bold</b></p>
-    <p><i>italic</i></p>
-    <p><u>underline</u></p>
-    <p><s>strikethrough</s></p>
-    <p>hello <sub>sub</sub></p>
-    <p>hello <sup>sup</sup></p> 
-<hr>
-    <!-- list pcuy bullet point -->
-    <ul type="square">
-        <li>peli</li>
-        <li>sepele</li>
-        <li>revou</li>
-    </ul>
-    <!-- list angka -->
-    <ol type="I">
-        <li>peli</li>
-        <li>sepele</li>
-        <li>revou</li>
-    </ol>
-    <hr>
-    <!-- table -->
-    <table border="1">
-        <thead>
-            <tr>
-                <th>nama</th>
-                <th>kelas</th>
-                <th>jurusan</th>
-            </tr>
+    <div class="wrapper">
+        <h2>Todo List</h2>
+        <div class="form-input">
+            <input type="text" id="task-input" placeholder="Enter a new task">
+            <input type="date" id="date-input"> 
+            <button id="add-task-btn">Add Task</button>
+        </div>
 
-        </thead>
-        <tbody>
-             <tr>
-                <td>rafi</td>
-                <td>12</td>
-                <td>rpl</td>
-            </tr>
-            <tr>
-                <td>anjay</td>
-                <td>11</td>
-                <td>kimayy</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
-    <!-- img -->
-     <h1>gambar</h1>
-     <img src="lamia _3.jpeg" alt="gambar wow" width="auto" height="200px" alt="some shii">
-        <hr>
-    <!-- link -->
-    <h1>link</h1>
-    <a href="https://www.google.com/" style="border: none;">google</a>
-    <br>
-    <a href="#myname">go to my name</a>
-
-    <hr>
-    <!-- form -->
-    <h1>form</h1>
-    <form action="">
-        <label for="name">name</label>
-        <input type="text" id="name" name="name" placeholder="my name is">
-        <br>
-        <label for="email" >email</label>
-        <input type="email" id="email" name="email" placeholder="your email please">
-        <br>
-        <label for="password">password</label>
-        <input type="password" id="password" name="password">
-        <br>
-        <label for="jenis-kelamin">jenis kelamin</label>
-        <input name="jenis-kelamin" id="jenis-kelamin" type="radio" value="male"> lakilaki
-        <input name="jenis-kelamin" id="jenis-kelamin" type="radio" value="female"> cwe
-        
-        <label for="papud">yor paporit pud</label><br>
-        <select name="paporit-pud" id="papud">
-            <option value="coklat">coklat</option>
-            <option value="vanila">vanila</option>
-            <option value="strawberry">strawberry</option>
-        </select>
-        <br>
-        <input type="submit" value="submit">
-    </form>
-
-    <div class="border-2 border-black p-4 mt-4 rounded-lg shadow-lg bg-gray-100">
-        <h3 class="text-xl font-bold">rafa</h3>
-        <p class="text-base text-gray-500">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ea illo corrupti impedit explicabo facere? Blanditiis obcaecati harum, quam nobis dignissimos eum illum sint quos nesciunt vitae reiciendis voluptatum pariatur.</p>
+        <div class="buttons">
+            <button id="filter-btn">Filter</button>
+            <button id="del-all-btn">Delete All</button>
+        </div>
+    
+        <div class="task-output">
+            <div class="list-header">
+                <h5>Task</h5>
+                <h5>Due Date</h5>
+                <h5>Status</h5>
+                <h5>Action</h5>
+            </div>
+            <ul id="task-list"></ul>
+        </div>
     </div>
-    script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
