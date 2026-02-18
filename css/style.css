@@ -23,11 +23,134 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.25);
     border-radius: 16px;
     padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(15, 23, 42, 0.25);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(15px);
 }
 
+.wrapper h2 {
+    color :white;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#task-input, #date-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.18);
+    color: #F8FAFC;
+    font-size: 14px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#task-input::placeholder {
+    color: #f8fafc;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.task-output {
+    margin-top: 20px;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #CBD5E1;
+    font-size: 14px;
+}
+
+.list-header h5 {
+    color: #F8FAFC;
+    font-weight: 500;
+}
+
+.task-list {
+    list-style: none;
+}
+
+/* class ini buat task yang masuk ke task-view */
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.list-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+}
+
+/* class ini buat tombol delete di tasknya */
+.delete-btn { 
+    background: rgba(248, 113, 113, 0.15);
+    color: #FCA5A5;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+#add-task-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    background: #22D3EE;
+    color: #f8fafc;
+}
+
+#add-task-btn:hover {
+    background: rgba(34, 211, 238, 0.25);
+}
+
+#filter-btn {
+    padding: 10px 20px;
+    background: rgba(15, 23, 42, 0.4);
+    color: #F8FAFC;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#filter-btn:hover {
+    background: rgba(15, 23, 42, 0.6);
+}
+
+#del-all-btn {
+    padding: 10px 20px;
+    background: #F87171;
+    color: #F8FAFC;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#del-all-btn:hover {
+    background: rgba(255, 0, 0, 0.25);
+}
