@@ -219,3 +219,61 @@ body {
     margin-left: 10px;
     font-style: italic;
 }
+
+@media (max-width: 640px) {
+    body {
+        align-items: flex-start;
+        padding: 16px;
+    }
+
+    .wrapper {
+        max-width: 100%;
+        padding: 20px 16px;
+    }
+
+    .form-input {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #add-task-btn {
+        width: 100%;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #filter-btn,
+    #del-all-btn {
+        width: 100%;
+    }
+
+    .list-header {
+        display: none; /* header tabel disembunyiin di HP */
+    }
+
+    .task-item {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        padding: 12px;
+        min-height: auto;
+    }
+
+    .task-text {
+        font-size: 15px;
+    }
+
+    .due-date,
+    .task-status {
+        margin-left: 0;
+        font-size: 12px;
+        opacity: 0.9;
+    }
+
+    .action-wrapper {
+        justify-content: flex-start;
+        margin-top: 6px;
+    }
+}
